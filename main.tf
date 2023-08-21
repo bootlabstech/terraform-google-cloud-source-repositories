@@ -10,7 +10,4 @@ resource "google_sourcerepo_repository" "repo" {
       service_account_email = var.service_account_email
     }
   }
-  lifecycle {
-    ignore_changes = [labels]
-  }
 }
